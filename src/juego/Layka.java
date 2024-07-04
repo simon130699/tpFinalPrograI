@@ -11,7 +11,7 @@ public class Layka {
     //variables de instancia del objeto LAYKA
     private double x,y,alto,ancho,angulo,direccionDisparoLaykaX,direccionDisparoLaykaY,xInicial,yInicial;
     private Color color;
-    private Image Layka,LaykaIzquierda;
+    private Image Layka,LaykaIzquierda,rayo;
     private int vidas;
     private boolean conVida;
 
@@ -26,6 +26,7 @@ public class Layka {
         this.ancho = ancho;
         this.alto = alto;
         this.color = Color.red;
+        this.rayo = Herramientas.cargarImagen("assets/rayoLaser.png");
         this.Layka = Herramientas.cargarImagen("assets/imagenLayka.png");
         this.LaykaIzquierda = Herramientas.cargarImagen("assets/imagenLaykaIzquierda.png");
         this.direccionDisparoLaykaX = 0;
